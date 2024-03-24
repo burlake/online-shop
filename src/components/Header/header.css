@@ -1,0 +1,150 @@
+.page__header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #EAEAEA;;
+  padding-left: 85px;
+  padding-right: 31px;
+}
+
+@media screen and (max-width:1023px) {
+  .page__header {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .page__header {
+    padding-left: 14px;
+    padding-right: 12px;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .page__header {
+    padding-left: 14px;
+    padding-right: 0px;
+  }
+}
+
+.header__link-home {
+  display: block;
+  width: 85px;
+  height: 30px;
+  background-image: url('../../images/logo.svg');
+  transition: opacity .3s linear;
+  background-repeat: no-repeat;
+  margin-top: 23px;
+}
+
+@media screen and (max-width:320px) {
+  .header__link-home {
+    margin-left: 0px;
+  }
+}
+
+.header__links-container {
+  padding: 12px 0 13px 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+
+}
+
+@media screen and (max-width:767px) {
+  .header__links-container {
+    padding-top: 24px;
+    margin-right: 14px;
+  }
+}
+
+.header__links-container_position{
+  position:relative;
+}
+
+.header__links-container_type_page {
+  padding-top: 21px;
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 2px;
+}
+
+@media screen and (max-width: 768px) {
+  .header__links-container_type_page {
+    box-sizing: border-box;
+    width: 520px;
+    height: 100vh;
+    padding-top: 159px;
+    padding-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 auto;
+    background-color: #202020;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .header__links-container_type_page {
+    width: 100%;
+    padding-top: 144px;
+    padding-bottom: 46px;
+  }
+}
+
+.header__like{
+  display: block;
+  width: 66px;
+  height: 30px;
+  background-image: url('../../images/like.svg');
+  transition: opacity .3s linear;
+  background-repeat: no-repeat;
+
+}
+
+.header__basket{
+  display: block;
+  width: 85px;
+  height: 30px;
+  background-image: url('../../images/basket.svg');
+  transition: opacity .3s linear;
+  background-repeat: no-repeat;
+}
+
+.header_active-amount{
+  width: 17.4px;
+  height: 18px;
+  background-color: #FFA542;
+  border-radius: 50%;
+  position:absolute;
+  top: -7px;
+  left: 17px;
+}
+
+.header_active-amount_number{
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18.29px;
+  text-align: center;
+  color: #FFFFFF  ;
+  position:absolute;
+  top: -14px;
+  left: 5px;
+
+}
+
+  .header__link-home:hover {
+    opacity: .7;
+    cursor: pointer;
+  }
+
+  .header__like:hover {
+    opacity: .7;
+    cursor: pointer;
+  }
+
+  .header__basket:hover {
+    opacity: .7;
+    cursor: pointer;
+  }

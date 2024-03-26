@@ -7,6 +7,8 @@ import WirelessHeadphones from "../WirelessHeadphones/WirelessHeadphones";
 import Basket from "../OrderCard/OrderCard";
 import CardList from "../CardList/CardList";
 import OrderCard from "../OrderCard/OrderCard";
+import OrderCardSum from "../OrderCardSum/OrderCardSum";
+import Order from "../Order/Order";
 
 function Main({ name, setLoggedIn }) {
   const [headphonesAll, setHeadphonesAll] = useState([]);
@@ -49,7 +51,11 @@ function Main({ name, setLoggedIn }) {
             <>
             <h1  className="gallery_title">Корзина</h1>
               {/* <Headphones headphones={saveHeadphones} /> */}
-              <OrderCard headphones={saveHeadphones} />
+              <div className="order__layout">
+                <OrderCard headphones={saveHeadphones}/>
+                <OrderCardSum />
+              </div>
+
             </>
           ),
 

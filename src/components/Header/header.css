@@ -148,3 +148,7 @@
     opacity: .7;
     cursor: pointer;
   }
+
+  .header_active-amount:hover {
+    cursor: pointer;
+  }

@@ -81,7 +81,7 @@
   }
 }
 
-.card__place {
+.card__name {
   margin: 0;
   padding: 0;
   max-width: 246px;
@@ -95,12 +95,15 @@
   overflow: hidden;
 }
 
+.card__name_color{
+  color: #FFA542;  
+}
+
 .card__img {
   min-width: 360px;
   max-width: 360px;
   min-height: 200px;
   max-height: 200px;
-  cursor: pointer;
 }
 
 @media screen and (max-width: 769px) {
@@ -131,4 +134,29 @@
   text-align: left;
   margin-left: 70px;
 
+}
+
+.card__star{
+  width: 23.33px;
+  height: 21.93px;
+}
+
+.card__star:hover{
+  opacity: .7;
+  cursor: pointer;
+}
+
+.card__name_buy{
+  border: none;
+  background-color: transparent;
+}
+
+.card__name_buy:hover{
+  opacity: .7;
+  cursor: pointer;
+}
+
+.card__rate{
+  display: flex;
+  flex-direction: row;
 }

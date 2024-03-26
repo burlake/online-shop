@@ -33,15 +33,15 @@ function WirelessHeadphones({ card, wirelessHeadphones, buttonType }) {
                   />
                 </>
                 <div className="card__container">
-                  <h2 className="card__place">{data.name}</h2>
-                  <p className="card__place">{data.price}  &#8381;</p>
+                  <h2 className="card__name">{data.name}</h2>
+                  <p className="card__name card__name_color">{data.price}  &#8381;</p>
                 </div>
                 <div className="card__container">
-                  <div>
-                    <img src={star}></img>
-                    <p className="card__place">{data.stars}</p>
+                  <div className="card__rate">
+                    <img className="card__star" src={star}></img>
+                    <p className="card__name ">{data.stars}</p>
                   </div>
-                  <p className="card__place">Купить</p>
+                  <button className="card__name card__name_buy">Купить</button>
                 </div>
               </div>
             );

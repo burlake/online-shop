@@ -25,7 +25,7 @@ export default function Header({ name }) {
                 onClick={clickLink}
               ></Link>
               <div className='header_active-amount'>
-                <p className='header_active-amount_number'>2</p>
+                <span className='header_active-amount_number'>2</span>
               </div>
             </li>
             <li className='header__links-container_position'>
@@ -33,10 +33,11 @@ export default function Header({ name }) {
                 to={'/saved-movies'}
                 className={`header__basket`}
                 onClick={clickLink}
-              ></Link>
-                <div className='header_active-amount'>
-                  <p className='header_active-amount_number'>2</p>
-              </div>
+              >
+                <div className='header_active-amount'></div>
+                <span className='header_active-amount_number '>2</span>
+              </Link>
+
             </li>
           </ul>
         </nav>

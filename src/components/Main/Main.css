@@ -1,0 +1,10 @@
+.gallery_title{
+    display: flex;
+    flex-direction: row;
+}
+
+.order__layout{
+    display: flex;
+    flex-direction: row;
+
+}

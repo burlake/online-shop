@@ -3,7 +3,7 @@
   padding: 73px 0 65px 0;
   max-width: 1140px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, max-content));
+  /* grid-template-columns: repeat(auto-fit, minmax(400px, max-content)); */
   justify-content: space-between;
   justify-items: center;
   grid-row-gap: 31px;
@@ -84,11 +84,6 @@ height: 14px;
   opacity: 0px;
 }
 
-.order__img:hover {
-  opacity: .7;
-  cursor: pointer;
-}
-
 .order__container_name{
   display: flex;
   flex-direction: column;
@@ -147,6 +142,7 @@ height: 14px;
   height: 114px;
   border-radius: 30px;
   background-color: #FFFFFF;
+  margin: 73px 0 65px 0;
 }
 
 .order__final_container{

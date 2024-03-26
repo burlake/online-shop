@@ -45,14 +45,9 @@ function OrderCard({ headphones, buttonType }) {
               <img className="order__delete" src={del}></img>
               <p className="order__final_price">{data.price} &#8381;</p>
             </div>
-          </li>
-          <OrderCardSum price={data.price}/>
-          
-          
-        </>
+          </li></>
         )
       })}
-
     </section>
   )
 

@@ -14,7 +14,6 @@ function WirelessHeadphones({ card, wirelessHeadphones, buttonType }) {
   return (
     <>
       <section>
-        <h1 className="gallery_title">Беспроводные наушники</h1>
         <section className="gallery">
           {wirelessHeadphone.map((data) => {
             return (
@@ -35,7 +34,7 @@ function WirelessHeadphones({ card, wirelessHeadphones, buttonType }) {
                 </>
                 <div className="card__container">
                   <h2 className="card__place">{data.name}</h2>
-                  <p className="card__place">{data.price}</p>
+                  <p className="card__place">{data.price}  &#8381;</p>
                 </div>
                 <div className="card__container">
                   <div>

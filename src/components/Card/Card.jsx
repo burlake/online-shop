@@ -2,38 +2,37 @@ import { useState } from "react";
 import "./card.css";
 import star from "../../images/star.svg"
 
-function Headphones({ card, headphones, buttonType, src, name, stars, price }) {
-  const [btnType, setBtnType] = useState(buttonType);
-  const headphone = (headphones || []).slice(0);
+import {checkingRelevanceValueBasket, getBasketLocalStorage, setBasketLocalStorage, ShowErrorMessage} from "../../utils/ulits.js";
 
-  const changeBtnType = () => {
-    if (btnType === "searchSaved") return setBtnType("");
-    if (!btnType) return setBtnType("searchSaved");
-  };
+
+// Рендер карточки
+function Headphones({ headphones, card, id, src, name, stars, price, discount}) {
 
   return (
-              <li
-                className="card"
-              >
-                <>
+              <div
+                className="card" data-product-id={`${id}`}>
+                <div className="card__img-container" >
                   <img
                     className="card__img"
                     src={src}
                     alt={`Иллюстрация фильма с названием " ${name}"`}
                   />
-                </>
+                </div>
                 <div className="card__container">
                   <h2 className="card__name">{name}</h2>
-                  <p className="card__name card__name_color">{price} &#8381;</p>
+                  <div className="card__price">
+                    <p className="card__name card__name_color">{price} &#8381;</p>
+                    <span className="card__name card__discount ">{discount}</span>
+                  </div>
                 </div>
                 <div className="card__container">
                   <div className="card__rate">
                     <img className="card__star" src={star}></img>
                     <p className="card__name ">{stars}</p>
                   </div>
-                  <button className="card__name card__name_buy">Купить</button>
+                  <button className="card__name card__name_buy" >Купить</button>
                 </div>
-              </li>
+              </div>
       );
 }
 

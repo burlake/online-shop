@@ -64,27 +64,23 @@
     }
   }
 
-  /* .page__header {
+  .error{
+    margin: 20px auto;
+    width: 400px;
+    background-color: #606060;
+    color: white;
+    font-size: 20px;
+    padding: 30px;
+    border-radius: 15px;
+}
 
-    margin: 0 auto;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    transition: padding-top .2s linear;
-    flex-direction: row;
-  }
+.error p {
+    text-align: center;
+}
 
-  @media screen and (max-width: 767px) {
-    .page__header {
-      width: 100%;
-      padding-top: 28px;
-    }
-  }
-
-  .page__header_opened {
-    padding-top: 169px;
-  } */
+.error p a {
+    color: white;
+}
 
   .page__container{
     margin: 0 auto;

@@ -99,11 +99,21 @@
   color: #FFA542;  
 }
 
-.card__img {
+.card__img-container{
   min-width: 360px;
   max-width: 360px;
   min-height: 200px;
   max-height: 200px;
+}
+
+.card__img {
+  width: 219.61px;
+  height: 237.07px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card__img:hover {
+  transform: scale(1.2);
 }
 
 @media screen and (max-width: 769px) {
@@ -151,12 +161,27 @@
   background-color: transparent;
 }
 
-.card__name_buy:hover{
+.card__name_buy:hover, .card__name_buy.active  {
   opacity: .7;
   cursor: pointer;
+  border: 1px solid #ff6633;
 }
 
 .card__rate{
   display: flex;
   flex-direction: row;
+}
+
+.card__price{
+  display: flex;
+  flex-direction: column;
+}
+
+.card__discount{
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 15.85px;
+  text-align: left;
+  color: #FFCE7F;
+  text-decoration: line-through;
 }

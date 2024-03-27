@@ -25,13 +25,13 @@ function WirelessHeadphones({ card, wirelessHeadphones, buttonType }) {
                 price={data.price}
                 stars={data.stars}
               >
-                <>
+                <div className="card__img-container">
                   <img
                     className="card__img"
                     src={data.image}
                     alt={`Иллюстрация фильма с названием " ${data.name}"`}
                   />
-                </>
+                </div>
                 <div className="card__container">
                   <h2 className="card__name">{data.name}</h2>
                   <p className="card__name card__name_color">{data.price}  &#8381;</p>

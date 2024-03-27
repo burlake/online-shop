@@ -65,6 +65,12 @@ width: 14px;
 height: 14px;
 }
 
+.order__plus{
+  padding: 0;
+  width: 14px;
+  height: 14px;
+}
+
 .order__quantity_number{
   text-align: center;
   font-size: 17px;

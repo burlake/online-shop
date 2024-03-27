@@ -8,7 +8,7 @@ function Order() {
         <>
             <div className='gallery__order'>
             <OrderCard />
-            <OrderCardSum/>
+            <OrderCardSum />
         </div>
         </>
 

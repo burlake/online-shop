@@ -122,15 +122,14 @@
 }
 
 .header_active-amount_number{
-  font-family: Montserrat;
   font-size: 15px;
   font-weight: 500;
   line-height: 18.29px;
   text-align: center;
   color: #FFFFFF  ;
   position:absolute;
-  top: -14px;
-  left: 5px;
+  top: -7px;
+  left: 21px;
 
 }
 

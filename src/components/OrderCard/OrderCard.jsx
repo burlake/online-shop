@@ -16,11 +16,8 @@ import {
 } from "../../utils/ulits.js";
 
 function OrderCard({ headphones }) {
-  // const savedHeadphone = (headphones || []).slice(0);
 
   const [savedHeadphone, setSaveHeadphone] = useState(headphones || []);
-
-  
 
   const deleteById = (id) => {
     setSaveHeadphone((oldValues) => {
@@ -28,6 +25,18 @@ function OrderCard({ headphones }) {
     });
     
   };
+
+  function handleSubmitMinus(e) {
+    e.preventDefault();
+    console.log('Отправлена форма ---.');
+    
+  }
+
+  function handleSubmitPlus(e) {
+    e.preventDefault();
+    console.log('Отправлена форма +++.');
+    
+  }
 
 
   return (
@@ -49,12 +58,12 @@ function OrderCard({ headphones }) {
                 src={data.image}
                 alt={`Иллюстрация фильма с названием " ${data.name}"`}
               />
-              <div className="order__quantity">
-                <button className="order__circle">
+              <div className="order__quantity" data-counter>
+                <button className="order__circle" onClick={handleSubmitMinus}>
                   <img className="order__minus" src={minus}></img>
                 </button>
                 <div className="order__quantity_number">{data.quantity}</div>
-                <button className="order__circle">
+                <button className="order__circle" onClick={handleSubmitPlus}>
                   <img className="order__plus" src={plus}></img>
                 </button>
               </div>

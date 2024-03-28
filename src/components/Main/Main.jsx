@@ -38,6 +38,8 @@ function Main({ name, data, setLoggedIn }) {
   }
 
 
+
+
   return (
     <main className="main">
       {

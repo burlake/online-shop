@@ -3,14 +3,25 @@ import "./card.css";
 import star from "../../images/star.svg"
 
 import {checkingRelevanceValueBasket, getBasketLocalStorage, setBasketLocalStorage, ShowErrorMessage} from "../../utils/ulits.js";
+import { Navigate } from "react-router-dom";
+
 
 
 // Рендер карточки
-function Headphones({ headphones, card, id, src, name, stars, price, discount}) {
+function Headphones({ nextId, headphones, card, id, src, name, stars, price, discount, setHeadphones, handleSubmitBasket}) {
 
+
+  function handleSubmitBasket(e) {
+    e.preventDefault();
+    console.log('Отправлена форма.');
+    
+  }
+
+
+  
   return (
               <div
-                className="card" data-product-id={`${id}`}>
+                className="card" id={"product-" + id}>
                 <div className="card__img-container" >
                   <img
                     className="card__img"
@@ -30,7 +41,9 @@ function Headphones({ headphones, card, id, src, name, stars, price, discount}) 
                     <img className="card__star" src={star}></img>
                     <p className="card__name ">{stars}</p>
                   </div>
-                  <button className="card__name card__name_buy" >Купить</button>
+                  <button className="card__name card__name_buy"
+                  onClick={handleSubmitBasket}
+                  >Купить</button>
                 </div>
               </div>
       );

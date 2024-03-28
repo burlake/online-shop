@@ -9,13 +9,13 @@ import OrderCard from "../OrderCard/OrderCard";
 
 function OrderCardSum({ headphones, buttonType, price }) {
   const [btnType, setBtnType] = useState(buttonType);
-  const savedHeadphone = (headphones || []).slice(0);
 
   const changeBtnType = () => {
     if (btnType === "searchSaved") return setBtnType("");
     if (!btnType) return setBtnType("searchSaved");
   };
 
+  
 
   return (
           <div className="order__final">

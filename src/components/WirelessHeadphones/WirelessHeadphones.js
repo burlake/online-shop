@@ -2,14 +2,8 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import star from "../../images/star.svg"
 
-function WirelessHeadphones({ card, wirelessHeadphones, buttonType }) {
-  const [btnType, setBtnType] = useState(buttonType);
+export default function WirelessHeadphones({ card, wirelessHeadphones, buttonType }) {
   const wirelessHeadphone = (wirelessHeadphones || []).slice(0);
-
-  const changeBtnType = () => {
-    if (btnType === "searchSaved") return setBtnType("");
-    if (!btnType) return setBtnType("searchSaved");
-  };
 
   return (
     <>
@@ -53,4 +47,3 @@ function WirelessHeadphones({ card, wirelessHeadphones, buttonType }) {
   );
 }
 
-export default WirelessHeadphones;

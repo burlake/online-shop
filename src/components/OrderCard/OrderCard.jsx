@@ -5,43 +5,43 @@ import "./orderCard.css";
 import plus from "../../images/plus.svg";
 import minus from "../../images/minus.svg";
 import del from "../../images/delete.svg";
-import OrderCardSum from "../OrderCardSum/OrderCardSum";
-import { useDispatch } from "react-redux";
-import { addItemToCart } from "../userCard/userCard";
-import { ERROR_SERVER, NO_ITEMS_CART } from "../../utils/constants.js";
-import {
-  setBasketLocalStorage,
-  getBasketLocalStorage,
-  checkingRelevanceValueBasket,
-} from "../../utils/ulits.js";
 
-function OrderCard({ headphones }) {
+
+
+
+function OrderCard({ headphones } ) {
 
   const [savedHeadphone, setSaveHeadphone] = useState(headphones || []);
+  const [counter, setCounter] = useState(1);
+  const [sum, setSum] = useState(counter);
+
 
   const deleteById = (id) => {
     setSaveHeadphone((oldValues) => {
       return oldValues.filter((data) => data.id !== id);
     });
-    
-  };
+  }
 
   function handleSubmitMinus(e) {
     e.preventDefault();
-    console.log('Отправлена форма ---.');
-    
+    if (counter > 0) {
+      setCounter(count => count - 1);
+    }    
   }
 
   function handleSubmitPlus(e) {
     e.preventDefault();
-    console.log('Отправлена форма +++.');
-    
+    setCounter(count => count + 1);    
   }
 
 
   return (
-    <section className="gallery__order">
+    <section className="gallery__order cart">
       {savedHeadphone.map((data) => {
+
+// сумма зависит от кол-ва одного товара
+  const sumOneGood = data.price * counter;
+
         return (
           <li
             className="order"
@@ -59,11 +59,11 @@ function OrderCard({ headphones }) {
                 alt={`Иллюстрация фильма с названием " ${data.name}"`}
               />
               <div className="order__quantity" data-counter>
-                <button className="order__circle" onClick={handleSubmitMinus}>
+                <button className="order__circle" onClick={handleSubmitMinus} d="buttonCountPlus" value="+">
                   <img className="order__minus" src={minus}></img>
                 </button>
-                <div className="order__quantity_number">{data.quantity}</div>
-                <button className="order__circle" onClick={handleSubmitPlus}>
+                <div className="order__quantity_number" >{counter}</div>
+                <button className="order__circle" onClick={handleSubmitPlus} id="buttonCountMinus" value="-">
                   <img className="order__plus" src={plus}></img>
                 </button>
               </div>
@@ -77,10 +77,8 @@ function OrderCard({ headphones }) {
             <div className="order__container_price">
               <button
                 onClick={() => deleteById(data.id)}
-                className="order__delete"
-                src={del}
-              ></button>
-              <p className="order__final_price">{data.price} &#8381;</p>
+              ><img className="order__delete" src={del}></img></button>
+              <p className="order__final_price">{ sumOneGood} &#8381;</p>
             </div>
           </li>
         );

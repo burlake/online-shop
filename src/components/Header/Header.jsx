@@ -3,19 +3,14 @@ import './header.css'
 import { Link } from "react-router-dom";
 
 
-export default function Header({ headphones, handleSubmitBasket }) {
+export default function Header(count) {
   const [ setIsOpen] = useState(false)
+
   const cartNum = document.querySelector("#cart_num");
-
-
-  function handleSubmitBasket (e) {
-    console.log("fghjklkjh", cartNum);
-    }
 
   function clickLink() {
     setIsOpen(false)
   }
-
 
   return (
     <header className={`header page__header`}>
@@ -37,7 +32,7 @@ export default function Header({ headphones, handleSubmitBasket }) {
               
                 
             </li>
-            <button  className='header__links-container_position'>
+            <button className='header__links-container_position cart'>
               <Link
                 to={'/saved-movies'}
                 className={`header__basket`}
@@ -45,7 +40,7 @@ export default function Header({ headphones, handleSubmitBasket }) {
               >
                 <div className='header_active-amount'></div>
                 <span className='header_active-amount_number basket__count' id="cart_num"
-                >0</span>
+                > </span>
               </Link>
 
             </button>

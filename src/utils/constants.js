@@ -8,7 +8,7 @@ import img6 from "../images/headphones_6.svg";
 export const headphones = [
   {
     id: 1,
-    quantity:1,
+    quantity: 1,
     name: "Apple BYZ S852I",
     image: img1,
     price: "2927",
@@ -100,7 +100,7 @@ export const savedHeadphones = [
     quantity:1,
     name: "Apple BYZ S852I",
     image: img1,
-    price: "2327",
+    price: 2327,
     stars: "4.7"
   },
   {
@@ -108,7 +108,7 @@ export const savedHeadphones = [
     quantity:2,
     name: "Apple BYZ S852I",
     image: img1,
-    price: "2327",
+    price: 2327,
     stars: "4.7"
   },
   {
@@ -116,7 +116,7 @@ export const savedHeadphones = [
     quantity:3,
     name: "Apple BYZ S852I",
     image: img1,
-    price: "2327",
+    price: 2327,
     stars: "4.7"
   },
 ];

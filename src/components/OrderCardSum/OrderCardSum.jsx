@@ -7,7 +7,7 @@ import minus from "../../images/minus.svg"
 import del from "../../images/delete.svg"
 import OrderCard from "../OrderCard/OrderCard";
 
-function OrderCardSum({ headphones, buttonType, price }) {
+function OrderCardSum({ headphones, buttonType, sumOneGood }) {
   const [btnType, setBtnType] = useState(buttonType);
 
   const changeBtnType = () => {
@@ -15,13 +15,13 @@ function OrderCardSum({ headphones, buttonType, price }) {
     if (!btnType) return setBtnType("searchSaved");
   };
 
-  
+  const totalSum = sumOneGood
 
   return (
           <div className="order__final">
           <div className="order__final_container">
             <p className="order__final_text">ИТОГО</p>
-            <p className="order__final_price">&#8381; {price}</p>
+            <p className="order__final_price">&#8381; {totalSum}</p>
           </div>
           <button className="order__final_ordering">Перейти к оформлению</button>
         </div>

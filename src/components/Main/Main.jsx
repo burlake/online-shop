@@ -17,29 +17,19 @@ function Main({ name, data, setLoggedIn }) {
   const [isCheckHeadphonesAll, setIsCheckHeadphonesAll] = useState(true);
   const [isCheckHeadphonesSave, setIsCheckHeadphonesSave] = useState(true);
   // const [savedHeadphone, setSaveHeadphone] = useState([]);
+  const [cartCourses, setCartCourses] = useState([]);
 
   useEffect(() => {
     setHeadphonesAll(headphones);
     setWirelessHeadphonesAll(wirelessHeadphones);
     setSaveHeadphones(headphones);
+    setCartCourses(headphones)
     // setSaveHeadphone(savedHeadphones);
 
   }, []);
 
-  function onCheckHeadphonesAll() {
-    if (isCheckHeadphonesAll) {
-      setIsCheckHeadphonesAll(false);
 
-      setHeadphonesAll(headphonesAll.filter((element) => element.price <= 40));
-    } else {
-      setIsCheckHeadphonesAll(true);
-      setHeadphonesAll(headphones);
-    }
-  }
-
-
-
-
+ 
   return (
     <main className="main">
       {
@@ -49,7 +39,7 @@ function Main({ name, data, setLoggedIn }) {
           homepage: (
             <>
               <h1 className="gallery_title">Наушники</h1>
-              <CardList headphones={headphonesAll} />
+              <CardList headphones={headphonesAll}  />
               <h1 className="gallery_title">Беспроводные наушники</h1>
               <WirelessHeadphones wirelessHeadphones={wirelessHeadphonesAll} />
             </>
@@ -59,7 +49,7 @@ function Main({ name, data, setLoggedIn }) {
             <h1  className="gallery_title">Корзина</h1>
               {/* <Headphones headphones={saveHeadphones} /> */}
               <div className="order__layout">
-                <OrderCard headphones={savedHeadphones} />
+                <OrderCard headphones={savedHeadphones} cartCourses={cartCourses} />
                 <OrderCardSum />
               </div>
 

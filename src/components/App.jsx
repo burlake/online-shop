@@ -22,11 +22,11 @@ function App() {
         />
 
         <Route
-          path="/saved-movies"
+          path="/saved-cards"
           element={
             <>
               <Header />
-              <Main name="savedmovies" />
+              <Main name="savedcards" />
               <Footer />
             </>
           }

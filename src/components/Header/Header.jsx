@@ -22,7 +22,7 @@ export default function Header(count) {
           <ul className='header__links-container header__links-container_type_page'>
             <li className='header__links-container_position'>
               <Link
-                to={'/saved-movies'}
+                to={'/saved-cards'}
                 className={`header__like`}
                 onClick={clickLink}
               >
@@ -34,7 +34,7 @@ export default function Header(count) {
             </li>
             <button className='header__links-container_position cart'>
               <Link
-                to={'/saved-movies'}
+                to={'/saved-cards'}
                 className={`header__basket`}
                 onClick={clickLink}
               >

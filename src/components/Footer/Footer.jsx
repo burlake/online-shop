@@ -10,7 +10,7 @@ function Footer() {
         <nav className="footer__links">
           <div className="footer__links_1">
             <Link
-              to={'/saved-movies'}
+              to={'/saved-cards'}
               className="footer__link"
               target="_blank"
               rel="noopener noreferrer"
@@ -19,7 +19,7 @@ function Footer() {
               Избранное
             </Link>
             <Link
-              to={'/saved-movies'}
+              to={'/saved-cards'}
               className="footer__link"
               target="_blank"
               rel="noopener noreferrer"

@@ -42,7 +42,7 @@ function Main({ name, data, setLoggedIn }) {
               <WirelessHeadphones wirelessHeadphones={wirelessHeadphonesAll} />
             </>
           ),
-          savedmovies: (
+          savedcards: (
             <>
             <h1  className="order__title">Корзина</h1>
               {/* <Headphones headphones={saveHeadphones} /> */}

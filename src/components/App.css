@@ -96,46 +96,4 @@
     border-style: none;
     background-color: transparent;
   }
-/*
-  * {
-    margin: 0;
-    padding: 0;
-  }
-  html,
-  body {
-    height: 100%;
-  }
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
-  .content {
-    min-height: calc(100vh - 172px);
-  }
 
-  @media screen and (max-width: 350px) {
-    .content {
-      min-height: calc(100vh - 253px);
-    }
-  } */
-
-/*
-  * {
-    margin: 0;
-    padding: 0;
-  }
-  html,
-  body,
-  .wrapper {
-    height: 100%;
-  }
-  .content {
-    box-sizing: border-box;
-    min-height: 100%;
-    padding-bottom: 90px;
-  }
-  .footer {
-    height: 80px;
-    margin-top: -80px;
-  } */

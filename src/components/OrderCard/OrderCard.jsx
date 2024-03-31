@@ -9,12 +9,18 @@ import del from "../../images/delete.svg";
 
 
 
-function OrderCard({ headphones } ) {
+function OrderCard({ saveHeadphone } ) {
 
-  const [savedHeadphone, setSaveHeadphone] = useState(headphones || []);
+  saveHeadphone = JSON.parse (localStorage.getItem ("storageCardCardList"));
+  // localStorage.setItem('storageCardCardList', JSON.stringify(headphones));
+
+
+  console.log("saveHeadphones", saveHeadphone);
+
+
+  const [savedHeadphone, setSaveHeadphone] = useState(saveHeadphone || []);
   const [counter, setCounter] = useState(1);
   const [sum, setSum] = useState(counter);
-
 
   const deleteById = (id) => {
     setSaveHeadphone((oldValues) => {
@@ -38,6 +44,7 @@ function OrderCard({ headphones } ) {
   return (
     <section className="gallery__order cart">
       {savedHeadphone.map((data) => {
+        
 
 // сумма зависит от кол-ва одного товара
   const sumOneGood = data.price * counter;

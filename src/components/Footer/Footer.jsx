@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer className="footer page__footer ">
       <div className="footer__container">
-      <Link to={'/'} className="header__link-home"></Link>
+      <Link to={'/'} className="footer__link-home"></Link>
         <nav className="footer__links">
           <div className="footer__links_1">
             <Link
@@ -72,7 +72,7 @@ function Footer() {
             </div>
           </div>
 
-          <div className="footer__links_2">
+          <div className="footer__links_3">
             <a
               className="footer__vk"
               href="https://vk.com/"

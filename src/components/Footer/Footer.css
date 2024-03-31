@@ -1,10 +1,13 @@
 
 .page__footer {
-  padding: 59px 70px 0;
+  margin: 21px auto 0px 101px;
+  padding: 15px 0px 0;
   display: flex;
   flex-direction: column;
   background-color: #FFFFFF;
-  border-radius: 40px 40px 0px 0px;
+  border-radius: 30px 30px 0px 0px;
+  width: 1110px;
+  height: 149px;
 }
 
 @media screen and (max-width: 1023px) {
@@ -44,6 +47,8 @@
   padding: 20px 0;
   display: flex;
   justify-content: space-between;
+  padding-right: 25px;
+  
 }
 
 @media screen and (max-width: 767px) {
@@ -56,8 +61,7 @@
 }
 
 .footer__links {
-  display: flex;
-
+  display: flex;  
 }
 
 @media screen and (max-width: 767px) {
@@ -66,6 +70,15 @@
     align-items: center;
     order: -1;
   }
+}
+.footer__link-home{
+  display: block;
+  width: 85px;
+  height: 30px;
+  background-image: url('../../images/logo.svg');
+  transition: opacity .3s linear;
+  background-repeat: no-repeat;
+  margin-left: 30px;
 }
 
 .footer__subtitle {
@@ -87,11 +100,15 @@
 .footer__link {
   margin-right: 20px;
   text-decoration: none;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 16px;
   color: #000000;
   transition: opacity .3s linear;
+
+  font-family: Montserrat;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20.72px;
+  text-align: left;
+  padding-bottom: 10px;
 }
 
 .footer__link:hover{
@@ -141,11 +158,12 @@
 
 .footer__vk{
   display: block;
-  width: 30px;
+  width: 47px;
   height: 30px;
   background-image: url('../../images/vk.svg');
   transition: opacity .3s linear;
   background-repeat: no-repeat;
+  margin-top: -2px;
 }
 
 .footer__vk:hover {
@@ -155,11 +173,12 @@
 
 .footer__telegram{
   display: block;
-  width: 30px;
+  width: 49px;
   height: 30px;
   background-image: url('../../images/telegram.svg');
   transition: opacity .3s linear;
   background-repeat: no-repeat;
+  margin-top: -7px;
 }
 
 .footer__telegram:hover {
@@ -174,6 +193,7 @@
   background-image: url('../../images/whatsapp.svg');
   transition: opacity .3s linear;
   background-repeat: no-repeat;
+  margin-top: -7px;
 }
 
 .footer__whatsapp:hover {
@@ -184,10 +204,17 @@
 .footer__links_1{
   display: flex;
   flex-direction: column;
-  width: 270px;
+  width: 336px;
+  margin-left: -58px;
 }
 
 .footer__links_2{
+  display: flex;
+  flex-direction: row;
+  margin-top: 24px;
+}
+
+.footer__links_3{
   display: flex;
   flex-direction: row;
 }

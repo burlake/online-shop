@@ -40,7 +40,7 @@ export default function Header(count) {
               >
                 <div className='header_active-amount'></div>
                 <span className='header_active-amount_number basket__count' id="cart_num"
-                > </span>
+                >0</span>
               </Link>
 
             </button>

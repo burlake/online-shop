@@ -1,13 +1,13 @@
 .gallery {
   margin: 0 auto;
-  padding: 73px 0 65px 0;
+  padding: 6px 0 4px 34px;
   max-width: 1140px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(360px, max-content));
   justify-content: center;
   justify-items: center;
   grid-row-gap: 31px;
-  grid-column-gap: 30px;
+  grid-column-gap: 21px;
   z-index: 2;
 }
 
@@ -45,7 +45,8 @@
 
 .card {
   position: relative;
-  max-width: 360px;
+  max-width: 350px;
+  min-height: 407px;
   object-fit: contain;
   box-sizing: border-box;
   display: flex;
@@ -69,10 +70,14 @@
 
 .card__container {
   position: relative;
-  padding: 23px 20px 18px 16px;
+  padding: 23px 20px 4px 22px;
   border-radius: 0 0 10px 10px;
   display: flex;
   justify-content: space-between;
+}
+
+.card__container_add {
+  padding: 100px 20px 4px 22px;
 }
 
 @media screen and (max-width: 769px) {
@@ -100,10 +105,12 @@
 }
 
 .card__img-container{
-  min-width: 360px;
-  max-width: 360px;
+  min-width: 350px;
+  max-width: 350px;
   min-height: 200px;
   max-height: 200px;
+  padding-top: 8px;
+  padding-bottom: 76px;
 }
 
 .card__img {
@@ -142,8 +149,19 @@
   font-weight: 600;
   line-height: 24.38px;
   text-align: left;
-  margin-left: 70px;
+  margin-left: 102px;
+  margin-top: 23px;
+}
 
+.order__title{
+  color: #838383;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24.38px;
+  text-align: left;
+  margin-left: 85px;
+  margin-top: 22px;
 }
 
 .card__star{

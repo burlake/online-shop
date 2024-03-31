@@ -21,7 +21,7 @@ function OrderCardSum({ headphones, buttonType, sumOneGood }) {
           <div className="order__final">
           <div className="order__final_container">
             <p className="order__final_text">ИТОГО</p>
-            <p className="order__final_price">&#8381; {totalSum}</p>
+            <p className="order__final_price order__final_sum">&#8381; {totalSum}</p>
           </div>
           <button className="order__final_ordering">Перейти к оформлению</button>
         </div>

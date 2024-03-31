@@ -92,14 +92,12 @@ export const wirelessHeadphones = [
   },
 ];
 
-
-
 export const savedHeadphones = [
   {
     id: 10,
     quantity:1,
     name: "Apple BYZ S852I",
-    image: img1,
+    image: img6,
     price: 2327,
     stars: "4.7"
   },
@@ -107,7 +105,7 @@ export const savedHeadphones = [
     id: 11,
     quantity:2,
     name: "Apple BYZ S852I",
-    image: img1,
+    image: img6,
     price: 2327,
     stars: "4.7"
   },
@@ -115,7 +113,7 @@ export const savedHeadphones = [
     id: 12,
     quantity:3,
     name: "Apple BYZ S852I",
-    image: img1,
+    image: img6,
     price: 2327,
     stars: "4.7"
   },

@@ -28,8 +28,6 @@ function Main({ name, data, setLoggedIn }) {
 
   }, []);
 
-
- 
   return (
     <main className="main">
       {
@@ -39,14 +37,14 @@ function Main({ name, data, setLoggedIn }) {
           homepage: (
             <>
               <h1 className="gallery_title">Наушники</h1>
-              <CardList headphones={headphonesAll}  />
+              <CardList headphones={headphonesAll}/>
               <h1 className="gallery_title">Беспроводные наушники</h1>
               <WirelessHeadphones wirelessHeadphones={wirelessHeadphonesAll} />
             </>
           ),
           savedmovies: (
             <>
-            <h1  className="gallery_title">Корзина</h1>
+            <h1  className="order__title">Корзина</h1>
               {/* <Headphones headphones={saveHeadphones} /> */}
               <div className="order__layout">
                 <OrderCard headphones={savedHeadphones} cartCourses={cartCourses} />

@@ -63,34 +63,7 @@
   position:relative;
 }
 
-.header__links-container_type_page {
-  padding-top: 21px;
-  display: flex;
-  justify-content: flex-end;
-  padding-left: 2px;
-}
 
-@media screen and (max-width: 768px) {
-  .header__links-container_type_page {
-    box-sizing: border-box;
-    width: 520px;
-    height: 100vh;
-    padding-top: 159px;
-    padding-bottom: 90px;
-    display: flex;
-    flex-direction: column;
-    margin: 0 0 0 auto;
-    background-color: #202020;
-  }
-}
-
-@media screen and (max-width: 525px) {
-  .header__links-container_type_page {
-    width: 100%;
-    padding-top: 144px;
-    padding-bottom: 46px;
-  }
-}
 
 .header__like{
   display: block;

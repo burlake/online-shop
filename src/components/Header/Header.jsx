@@ -19,7 +19,7 @@ export default function Header(count) {
       </div>
       <>
         <nav>
-          <ul className='header__links-container header__links-container_type_page'>
+          <ul className='header__links-container '>
             <li className='header__links-container_position'>
               <Link
                 to={'/saved-cards'}
